@@ -1,0 +1,131 @@
+.notify-body{
+    background: #243D53;
+    height: 100vh;
+    width: 100%;
+    margin-top: 0;
+    position: relative;
+    z-index: 1;
+}
+.notify-card{
+    position: absolute;
+    left: 35%;
+    top: 5%;
+    background: #FFFFFF;
+    height: 500px;
+    width: 470px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.search-bar-hide{
+   position: absolute;
+   right: 5px;
+   top:45px;
+   z-index: 999;
+    height: 40px;
+    width: 450px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    visibility: hidden;
+}
+
+.search-bar{
+   position: absolute;
+   left: 67px;
+    top: 45px;
+    z-index: 999;
+    height: 40px;
+    width: 340px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform .5s ease;
+    transform: scale(1.3);
+}
+
+.search-bar-field{
+    border: none;
+       width: 330px;
+    height: 38px;
+    border-radius: 4px;
+    margin-left: 5px;
+   
+    
+}
+
+
+.notify-header{
+    height: 50px;
+    background: #5F98CD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 14px;
+    color: white;
+    
+}
+.notify-header .icon{
+    cursor: pointer;
+    z-index: 999;
+    position: relative;
+}
+.notify-card-body{
+    margin: 0px auto;
+    width:280px;
+    border-left: 4px solid #EEEEEE;
+    padding: 0 9px 0 8px;
+}
+.notify-card-body div{
+    background: #FFFFFF;
+    padding: 5px 20px;
+    font-size: 16px;
+    position: relative;
+    top:10px;
+    height:110px;
+}
+
+
+.notify-card-body div:before{
+content: ''; 
+display: block; 
+width: 10px; 
+height: 10px; 
+border-radius: 50%; 
+background-color: #FFFFFF; 
+border: 3px solid #72A3D3; 
+position: absolute;
+top: 34px;
+left: -17px;}
+
+.notify-card-body div small{
+    color: #a2a2a2;
+}
+.notify-card-body div h3{
+    margin-top: 5px;
+    color: #737373;
+    font-size: 16px;font-weight: 600;
+}
+.notify-card-body div span{
+    color: #8F8F8F;
+     font-size: 13px;font-weight: 400;
+}
+
+/* responsive device */
+
+@media (max-width: 700px) {
+.notify-card {
+    position: absolute;
+    left: 7%;
+    top: 5%;
+    background: #FFFFFF;
+    height: 500px;
+    width: 340px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.search-bar-field {
+   width: 253px;
+    }
+.search-bar {
+    left: 38px;
+    width: 256px;}
+}
