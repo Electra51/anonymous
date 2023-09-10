@@ -1,0 +1,18 @@
+.card-slider{
+    width:45%;
+    margin: 30px;
+   
+}
+
+.new-class{
+     display: flex;
+    align-items: center;
+    gap:50px
+}
+.video-button{
+padding: 6px 16px;
+border-radius: 4px;
+border:none;
+background: orange;
+color: aliceblue;
+}
